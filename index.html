@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>
+      estudio
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Germania+One|Oswald:300,400,500" rel="stylesheet">
+  
+    <link href="flickity/flickity.css" media="screen" rel="stylesheet">
+
+	  
+
+	  
+    <style>
+    html, body {height: 100%; margin: 0; background:#eeeeee; font-family: 'Oswald', sans-serif; font-weight:300; color:grey; }
+
+    .wrapper { width:100%; height:100vh; margin:0;}
+    .container { position:relative; width:100%; margin: 0 auto; }
+    .carousel { position:relative; width: 100%; height:100vh;  margin: 0 auto;}
+    .footer {  position:absolute; bottom:10px; right:10px; color:#ccc; font-size:20px;}
+    .footer2 {  font-family: 'Open Sans', sans-serif; font-weight:800; position:absolute; bottom:10px; left:10px; color:#ccc; font-size:14px;line-height:14px; text-align:center; }
+    .tighten { letter-spacing:-2px; font-size:10px;line-height:8px; text-align:center;}
+    .gamebtn { margin:20px;}
+
+		
+		/* Type */
+    h1 { font-family: 'Germania One', cursive; font-size: 30px; color:#ddd; }
+	.sb {font-weight:500; }
+	.white {color:white; }
+	a {color:black; }
+	a:hover {color:grey; }
+
+    /* Carousel */
+    .gallery-cell { width: 100%; text-align:center;  height:100vh; background-position: center; background-size: contain; background-repeat: no-repeat; }
+    .description { position:absolute; font-size: 14px; text-align:left; padding-left: 20px; width:100%; margin-top:10px;}
+
+		
+	@media only screen and (max-width: 567px) {
+    .gallery-cell { width: 100%; text-align:center;  height:100vh; background-position: center; background-size: 150%; background-repeat: no-repeat; }
+	}
+	
+		
+@keyframes example {
+    0%   {color:rgba(255, 255, 255, 1);}
+    100% {color: rgba(150, 150, 150, 1);}
+}
+
+/* The element to apply the animation to */
+		
+.colourchanger {
+    width: 100%;
+    color: rgba(150, 150, 150, 1);
+    animation-name: example;
+    animation-duration: 20s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}		
+		
+.fade {
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 20s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}		
+
+	@keyframes fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+		
+.fromTopIn
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	opacity: 1.0;
+}		
+		
+    </style>
+
+  </head>
+  <body>
+
+<div class="wrapper">
+	<div class="carousel">
+		<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "pageDots": false, "prevNextButtons": false, "autoPlay": true }'>
+			  <div class="gallery-cell" style="background-image: url('images/fantail.jpg');">
+					  <div class="description">Business card, logo and identity | <span class="sb">Fantail Energy</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/butcherbird.jpg');">
+					  <div class="description">Business card, logo and identity | <span class="sb">Butcher Films</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/reading-revolution.jpg');">
+					  <div class="description">Business card, logo and identity | <span class="sb">The Reading Revolution</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/tekohu.jpg');">
+					  <div class="description">Business card, logo and identity | <span class="sb">Te Kohu logging</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/blackninja.jpg');">
+					  <div class="description">T-Shirt graphic | <span class="sb">Black Ninja rugby league team</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/glenora.jpg');">
+					  <div class="description">Graphic for junior certificates | <span class="sb">Glenora Bears rugby league club</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/street-riders.jpg');">
+					  <div class="description">Graphic for bike club | <span class="sb">Street Riders club</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/lee-ralph.jpg');">
+					  <div class="description">Graphic for skateboard | <span class="sb">Lee Ralph</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/alchemy.jpg');">
+					  <div class="description">Graphic for massage therapist | <span class="sb">A Touch of Alchemy</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/headless-horseman.jpg');">
+					  <div class="description">Logo for record company | <span class="sb">Headless Horseman</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/revolution-productions.jpg');">
+					  <div class="description">Logo for film company | <span class="sb">Revolution Productions</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/hoss.jpg');">
+					  <div class="description">Logo for hydraulics company | <span class="sb">Hydraulic Oil Systems Services</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/pacific-racing.jpg');">
+					  <div class="description">Logo for yatch racing team | <span class="sb">Pacific racing</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/pacific-racing2.jpg');">
+					  <div class="description">Logo for yatch racing team | <span class="sb">Pacific racing</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/firstcompanygrips.jpg');">
+					  <div class="description">Logo for Film Grip Comapny | <span class="sb">First Company Grips</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/bulletbelt.jpg');">
+					  <div class="description">CD booklet | <span class="sb">Bulletbelt – Writhe and Ascend</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/bulletbelt-posters.jpg');">
+					  <div class="description">Tour posters | <span class="sb">Bulletbelt</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/grindhouse.jpg');">
+					  <div class="description">Grindhouse posters | <span class="sb">"Herbie" winner Groove Guide competition</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/foxymoron.jpg');">
+					  <div class="description">Magazine | <span class="sb">Foxymoron</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/true-red.jpg');">
+					  <div class="description">Website for Tuhoe Isaac book | <span class="sb">True Red</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/black-power.jpg');">
+					  <div class="description">Website for Abe Wharewaka | <span class="sb">Black Power Sindhi Chapter</span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/bigdog.jpg');">
+					  <div class="description">Original font | <span class="sb">BigDog download at <a href="https://www.dafont.com/bigdog.font">dafont.com</a></span></div>
+			  </div>
+			  <div class="gallery-cell" style="background-image: url('images/bestofmylove.jpg');">
+					  <div class="description">Original font | <span class="sb">Best of my love download at <a href="https://www.dafont.com/the-best-of-my-love.font">dafont.com</a></span></div>
+			  </div>
+			  <div class="gallery-cell">
+					  <div class="description">Games | <span class="sb">Stencyl created</span></div>
+	          <a href="http://estudio.co.nz/squashy/"><img class="gamebtn" src="images/squashy.jpg" width="200" height="200" alt=""/></a><a href="http://estudio.co.nz/flappy/"><img class="gamebtn"  src="images/flappy.jpg" width="200" height="200" alt=""/></a><a href="http://estudio.co.nz/asteroids/"><img class="gamebtn"  src="images/asteroids.jpg" width="200" height="200" alt=""/></a> </div>
+		  </div>
+	</div>
+</div>
+
+<div class="footer"><span class="colourchanger">&copy;&nbsp;&efr;&sfr;&tfr;&ufr;&dfr;&ifr;&ofr;&nbsp;&spades;</span></div>
+<div class="footer2"><span class="fade" style="font-size:40px;">&#128128;</span></div>
+
+
+    <script src="flickity/flickity.pkgd.js">
+    </script> 
+    <script type="text/javascript">
+    var flkty = new Flickity( '.main-gallery', {
+    // options
+    cellAlign: 'left',
+    contain: true
+    });  
+    </script>
+    
+
+  </body>
+</html>
