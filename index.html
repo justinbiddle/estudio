@@ -35,9 +35,12 @@
 	a:hover {color:grey; }
 
     /* Carousel */
-    .gallery-cell { width: 100%; text-align:center;  height:100vh; background-position: center; background-size: contain; background-repeat: no-repeat; }
+    .gallery-cell { width: 100%; text-align:center;  height:100vh; background-position: center; background-size: 60%; background-repeat: no-repeat; }
     .description { position:absolute; font-size: 14px; text-align:left; padding-left: 20px; width:100%; margin-top:10px;}
 
+	@media only screen and (max-width: 961px) {
+    .gallery-cell { width: 100%; text-align:center;  height:100vh; background-position: center; background-size: 120%; background-repeat: no-repeat; }
+	}
 		
 	@media only screen and (max-width: 567px) {
     .gallery-cell { width: 100%; text-align:center;  height:100vh; background-position: center; background-size: 150%; background-repeat: no-repeat; }
@@ -160,15 +163,12 @@
 			  <div class="gallery-cell" style="background-image: url('images/bestofmylove.jpg');">
 					  <div class="description">Original font | <span class="sb">Best of my love download at <a href="https://www.dafont.com/the-best-of-my-love.font">dafont.com</a></span></div>
 			  </div>
-			  <div class="gallery-cell">
-					  <div class="description">Games | <span class="sb">Stencyl created</span></div>
-	          <a href="http://estudio.co.nz/squashy/"><img class="gamebtn" src="images/squashy.jpg" width="200" height="200" alt=""/></a><a href="http://estudio.co.nz/flappy/"><img class="gamebtn"  src="images/flappy.jpg" width="200" height="200" alt=""/></a><a href="http://estudio.co.nz/asteroids/"><img class="gamebtn"  src="images/asteroids.jpg" width="200" height="200" alt=""/></a> </div>
 		  </div>
 	</div>
 </div>
 
 <div class="footer"><span class="colourchanger">&copy;&nbsp;&efr;&sfr;&tfr;&ufr;&dfr;&ifr;&ofr;&nbsp;&spades;</span></div>
-<div class="footer2"><span class="fade" style="font-size:40px;">&#128128;</span></div>
+<div class="footer2"><span class="fade" ><span style="font-size:40px;">&#128128;</span>&Jscr;&uscr;&sscr;&tscr;&iscr;&nscr;&nbsp;&Bscr;&iscr;&dscr;&dscr;&lscr;&escr;</span></div>
 
 
     <script src="flickity/flickity.pkgd.js">
